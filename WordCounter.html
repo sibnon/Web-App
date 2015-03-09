@@ -1,0 +1,37 @@
+
+<html>
+<head></head>
+
+<body>
+<form method="POST" name="wordcount">
+  <script language="JavaScript">
+
+function countit(){
+
+/*Word count script
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+var formcontent=document.wordcount.wordcount2.value
+formcontent=formcontent.split(" ")
+document.wordcount.wordcount3.value=formcontent.length
+}
+</script>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="100%"><textarea rows="12" name="wordcount2" cols="60" wrap="virtual"></textarea></td>
+    </tr>
+    <tr>
+      <td width="100%"><div align="right"><p><input type="button" value="Calculate Words"
+      onClick="countit()"> <input type="text" name="wordcount3" size="20"></p>
+      <div align="center"><center><p><font face="arial" size="-2">This free script provided by</font>
+      <font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+      Kit</a></font></p>
+      </center></div></div></td>
+    </tr>
+  </table>
+ </body> 
+  
+</form>
+</html>

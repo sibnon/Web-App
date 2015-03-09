@@ -1,0 +1,41 @@
+<html>
+    <!--
+
+   Attempt to compute a Game Quiz
+   Mandilakhe Hlaule and Sibusiso Nondoda,Cortex hub, 05 March 2015
+
+
+-->
+
+    <head>
+        <title>First Web Application</title>
+        
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script>
+            confirm("Are you ready to play");
+        
+        var Poll= ["Who is the co-founder of Microsoft?","Who is the co-founder of The Cortex Hub?","Who is the current CEO of The Cortex Hub?","Which Block is The Cortex Hub head-quartered?","Which city is Silicon Valley located?"];
+        var Correction = ["bill gates","andile ngcaba", "thabo nonkenge",'d',"california"];
+         
+        var counter_Correct=0;
+        var counter_Incorrect=0;
+    
+    for (z=0; z<5; z++) {
+               answer=prompt(Poll[z]); 
+            
+            if (answer.toLowerCase() === Correction[z]){
+             counter_Correct=counter_Correct+1;
+            }
+            else{
+              counter_Incorrect=counter_Incorrect+1;
+}                }
+
+                alert("The number of correct answers is: " + counter_Correct);
+                alert("The number of Incorrect answers is: " + counter_Incorrect);
+       </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+
+<html>
+
+<!--
+
+   Attempt to compute a javaScipt that converts currency
+   Mandilakhe Hlaule and Sibusiso Nondoda,Cortex hub, 05 March 2015
+
+
+-->
+
+   <head>
+       <script language="JavaScript">
+<!--
+
+function randConverter(){
+document.converter.dollar.value = document.converter.rand.value * (1/11.7778).toFixed(2)
+document.converter.pound.value = document.converter.rand.value * (1/17.9434).toFixed(2)
+document.converter.euro.value = document.converter.rand.value * (1/13.0036).toFixed(2)
+}
+function euroConverter(){
+document.converter.dollar.value = document.converter.euro.value *(1/0.9057).toFixed(2)
+document.converter.pound.value = document.converter.euro.value *(1/1.3799).toFixed(2)
+document.converter.rand.value = document.converter.euro.value *(1/0.0769).toFixed(2)
+}
+function dollarConverter(){
+document.converter.euro.value = document.converter.dollar.value * (1/1.1041).toFixed(2)
+document.converter.pound.value = document.converter.dollar.value * (1/1.5235).toFixed(2)
+document.converter.rand.value = document.converter.dollar.value * (1/0.0849).toFixed(2)
+}
+function poundConverter(){
+document.converter.dollar.value = document.converter.pound.value * (1/0.6564).toFixed(2)
+document.converter.euro.value = document.converter.pound.value * (1/0.7247).toFixed(2)
+document.converter.rand.value = document.converter.pound.value * (1/0.0557).toFixed(2)
+}
+
+//-->
+</script>
+   </head>
+   
+   <body>
+   
+        <form name="converter" style="color: black">
+           <table border="0">
+		      <tr>
+                 <td>S.A ZAR: </td><td><input type="text" name="rand" onChange="randConverter()" /></td>
+              </tr>
+              <tr>
+                 <td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+              </tr>
+              <tr>
+                 <td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+              </tr>
+              <tr>
+                   <td>British Pound:</td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+              </tr>
+              
+              <tr>
+                  <td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+              </tr>
+           </table>
+    </form>
+   </body>
+
+</html>
